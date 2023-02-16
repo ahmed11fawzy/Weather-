@@ -1,0 +1,33 @@
+:root{
+   --nav_bg:#1E202B;
+   --nav_links:#fff;
+}
+.navbar{
+   background-color:var(--nav_bg) ;
+   
+} 
+.w-60{
+   width: 60%;
+}
+
+
+.nav-link{
+   color: var(--nav_links);
+   width: 19%;
+   text-align: center;
+}
+.navbar .fs-6{
+   font-size: 12px !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link{
+   color: #13BADE;
+   border: 2px solid #13BADE;
+   border-radius: 25px;
+   background-color: transparent;
+}
+.nav-link:focus, .nav-link:hover{
+   color: #13BADE;
+   border: 2px solid #13BADE;
+   border-radius: 25px;
+   background-color: transparent;
+}
