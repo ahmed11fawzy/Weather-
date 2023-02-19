@@ -4,9 +4,72 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./Css/all.min.css">
+   <link rel="stylesheet" href="./Css/bootstrap.min.css">
+   <link rel="stylesheet" href="./Css/mainStyling.css">
    <title>Document</title>
 </head>
 <body>
-   
+   <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+         <a class="navbar-brand mt-2" href="#">
+            <img src="./Img/logo.png" alt="" srcset="" class="d-inline mb-3">
+            <div class="d-inline-block ms-2">
+               <h3 class="mb-1 fs-5 text-white">Weather</h3>
+               <p class="fw-lighter text-white-50 fs-6  ms-1 ">tagline goes here</p>
+            </div>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto w-60 d-flex justify-content-between ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="#">Live cameras</a>
+            <a class="nav-link" href="#">Photos</a>
+            <a class="nav-link" href="./Contact.html" target="_self">Contact</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <section id="Home" class="mb-0">
+      <div class="container p-1">
+         <div class="searchContainer mt-5 pt-5 position-relative ">
+            <input type="search" id="searchInp" placeholder="Find your location.." class=" form-control-lg w-100 rounded-pill ">
+            <button id="searchBtn" class="btn btn-info form-control-lg text-white rounded-pill position-absolute me-0">Find</button>
+         </div>
+         <div class="row  gx-0 gy-0  mt-5 pt-3">
+            <div id="todayCard" class="col-4">
+               
+            </div>
+            <div id="nextDayBox" class="col-4">
+               
+            </div>
+            <div id="thirdDay" class="col-4">
+               
+            </div>                        
+         </div>
+      </div>
+   </section>
+   <footer class="mt-0">
+      <div class="container d-flex pt-1 ">
+         <div class="searchContainer   pt-5  position-relative w-75">
+            <input type="email" id="emailInp" placeholder="Enter your email.." class=" form-control-lg w-100 rounded-pill ">
+            <button id="subscribBtn" class="btn btn-info form-control-lg text-white rounded-pill position-absolute me-0">Subscribe</button>
+         </div>
+         <div class=" social_container w-25  mt-5  pt-2">
+            <a class="btn  rounded-circle ms-auto "><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="btn rounded-circle "><i class="fa-brands fa-twitter"></i></a>
+            <a class="btn rounded-circle "><i class="fa-brands fa-google-plus-g"></i></a>
+            <a class="btn rounded-circle "><i class="fa-brands fa-pinterest-p"></i></a>
+         </div>
+      </div>
+         <div class="mt-5 text-white w-100 ">
+            <p class="w-75 ms-auto">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+         </div>
+      
+   </footer>
+   <script src="/Js/main.js"></script>
 </body>
 </html>

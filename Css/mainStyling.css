@@ -1,0 +1,104 @@
+:root{
+   --nav_bg:#1E202B;
+   --nav_links:#fff;
+}
+/* ================================== navBar ===================================== */
+.navbar{
+   background-color:var(--nav_bg) ;
+   
+} 
+.w-60{
+   width: 60%;
+}
+
+
+.nav-link{
+   color: var(--nav_links);
+   font-size: 15px !important;
+   width: 19%;
+   text-align: center;
+}
+.navbar .fs-6{
+   font-size: 12px !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link{
+   color: #13BADE;
+   border: 2px solid #13BADE;
+   
+   border-radius: 25px;
+   background-color: transparent;
+}
+.nav-link:focus, .nav-link:hover{
+   color: #13BADE;
+   border: 2px solid #13BADE;
+   border-radius: 25px;
+   background-color: transparent;
+}
+
+/*  ================================================================================ */
+
+#Home{
+   background-image: url(../Img/banner.png);
+   background-position:top;
+   height: 600px;
+   background-size: 100% 50%;
+   background-repeat: no-repeat;
+   background-color: #1E202B;
+   
+}
+.searchContainer .btn{
+   transform: translate(-95px,5px);
+   height: 50px !important;
+   width: 90px;
+}
+.searchContainer input{
+   background-color: var(--nav_bg);
+   border: none;
+}
+.searchContainer .form-control-lg{
+   outline: none;
+   border: none;
+   height: 60px;
+   color: #ffffff;
+}
+.card{
+   height: 300px;
+   border: 0px;
+   background-color:#323544;
+
+}
+.fs-80{
+   font-size: 80px;
+}
+.card-header{
+   background-color: #2D303D;
+}
+#nextDayBox .card{
+   background-color: #262936;
+}
+#nextDayBox .card-header{
+   background-color: #222531;
+}
+footer{
+   background-color:#262936 ;
+   height: 200px;
+   margin-top: 0px;
+}
+.social_container{
+   display: flex;
+   
+}
+
+.social_container a{
+   display: block;
+   color: #13BADE;
+   width: 50px;
+   height: 50px;
+   margin-inline: 5px;
+   padding-top: 10px;
+   background-color: #1E202B;
+}
+.social_container a:hover{
+   background-color: #13BADE;
+   color: white;
+}
