@@ -2,6 +2,8 @@
 
 
 
+
+
 let searchInp=document.querySelector('#searchInp'),
     searchBtn=document.querySelector('#searchBtn');
 
@@ -34,6 +36,7 @@ searchBtn.addEventListener('click',function(){
    requestWeatherToday.send();
    getPredictionWeather();
 })
+
 
 
 function getTodayWeather(){
@@ -98,7 +101,6 @@ function getThirdDayWeather(){
          `   
 
 }
-
 
 
 /* ============================================ */ 
