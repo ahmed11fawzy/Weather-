@@ -34,13 +34,29 @@
    border-radius: 25px;
    background-color: transparent;
 }
+.navbar-toggler:focus {
+   text-decoration: none;
+   outline: 0;
+   box-shadow: none !important;
+}
+.navbar-toggler-icon {
+   display: inline-block;
+   width: 1.5em;
+   height: 1.5em;
+   background-image:none !important;
+   color: #eee;
 
+ }
+ .navbar-toggler-icon i{
+   margin-top: 5px;
+ }
+ 
 /*  ================================================================================ */
 
 #Home{
    background-image: url(../Img/banner.png);
    background-position:top;
-   height: 600px;
+   min-height: 600px;
    background-size: 100% 50%;
    background-repeat: no-repeat;
    background-color: #1E202B;
@@ -62,7 +78,7 @@
    color: #ffffff;
 }
 .card{
-   height: 300px;
+   min-height: 300px;
    border: 0px;
    background-color:#323544;
 
@@ -81,12 +97,12 @@
 }
 footer{
    background-color:#262936 ;
-   height: 200px;
+   min-height: 200px;
    margin-top: 0px;
 }
 .social_container{
    display: flex;
-   
+   min-width: 25%;
 }
 
 .social_container a{
@@ -102,3 +118,32 @@ footer{
    background-color: #13BADE;
    color: white;
 }
+
+
+/* ================================================================ */
+
+@media (max-width: 576px) { 
+
+   .fs-80{
+      font-size: 40px;
+   }
+   .details {
+      display: flex;
+      flex-direction: column;
+   }
+   .searchContainer,.social_container{
+      width: 90% !important;
+      margin: auto;
+   }
+   .w-60 {
+      width: 90%;
+    }
+    .nav-link{
+      width: 35%;
+    }
+    .navbar-nav{
+      padding-top: 5px;
+      height: 100%;
+    }
+   
+ }
